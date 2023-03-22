@@ -10,3 +10,10 @@
 ```
 docker run -d --name rabbitmq -p 5672:5672 rabbitmq:3.9.29-management
 ```
+
+## Run first Celery worker server
+
+- Command:
+```
+celery -A tasks worker --loglevel=INFO
+```
